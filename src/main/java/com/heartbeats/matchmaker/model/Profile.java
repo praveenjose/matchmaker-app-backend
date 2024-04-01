@@ -1,7 +1,10 @@
 package com.heartbeats.matchmaker.model;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Arrays;
 
+@Document(collection= "UserProfile")
 public class Profile {
     private String firstname;
     private String lastname;
